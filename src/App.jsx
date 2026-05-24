@@ -165,6 +165,9 @@ const ITEMS_DEFAULT = [
   { id:"f5",cat:"futuro",icon:"🚶",name:"Andador",detail:"para empezar a caminar",priority:"Baja",canSplit:false,
     specs:"Andador para la etapa de aprendizaje de caminar.\n\nEl enlace de referencia es el modelo sugerido.",
     refLink:"https://a.co/d/0dtwIiN9",claimedBy:[]},
+  { id:"f5",cat:"futuro",icon:"🚶",name:"Papá de Repuesto",detail:"para cuando se canse el oficial",priority:"alta",canSplit:false,
+    specs:"Dime cuando me puedes reemplazar bro",
+    ,claimedBy:[]},
 ];
 
 const TABS = [
@@ -691,7 +694,7 @@ export default function App() {
         {/* ROPA TAB */}
         {activeTab === "ropa" && (
           <div>
-            <div style={{background:"#ecfdf5",border:"2px dashed #6ee7b7",borderRadius:14,
+            <div style={{background:"#92400e",border:"2px dashed #6ee7b7",borderRadius:14,
               padding:"11px 15px",marginBottom:18,display:"flex",gap:10,alignItems:"flex-start"}}>
               <span style={{fontSize:18}}>🦕</span>
               <div style={{fontSize:13,color:"#065f46",fontWeight:700,lineHeight:1.5}}>
