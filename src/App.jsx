@@ -694,7 +694,7 @@ export default function App() {
         {/* ROPA TAB */}
         {activeTab === "ropa" && (
           <div>
-            <div style={{background:"#92400e",border:"2px dashed #6ee7b7",borderRadius:14,
+            <div style={{background:"#ecfdf5",border:"2px dashed #6ee7b7",borderRadius:14,
               padding:"11px 15px",marginBottom:18,display:"flex",gap:10,alignItems:"flex-start"}}>
               <span style={{fontSize:18}}>🦕</span>
               <div style={{fontSize:13,color:"#065f46",fontWeight:700,lineHeight:1.5}}>
@@ -792,7 +792,7 @@ export default function App() {
               const pr = PR[item.priority];
               return (
                 <div key={item.id} className="card" style={{
-                  background:full?"#f0fdf4":partial?"#fffbeb":"white",
+                  background:full?"#ecfdf5":partial?"#fffbeb":"white",
                   border:`1.5px solid ${full?"#86efac":partial?"#fcd34d":"#f1f5f9"}`,
                   borderRadius:16,padding:"13px 15px",marginBottom:10,
                   boxShadow:full?"none":"0 1px 8px rgba(0,0,0,.06)",
