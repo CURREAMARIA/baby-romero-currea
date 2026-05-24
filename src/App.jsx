@@ -165,9 +165,6 @@ const ITEMS_DEFAULT = [
   { id:"f5",cat:"futuro",icon:"🚶",name:"Andador",detail:"para empezar a caminar",priority:"Baja",canSplit:false,
     specs:"Andador para la etapa de aprendizaje de caminar.\n\nEl enlace de referencia es el modelo sugerido.",
     refLink:"https://a.co/d/0dtwIiN9",claimedBy:[]},
-  { id:"f5",cat:"futuro",icon:"🚶",name:"Papá de Repuesto",detail:"para cuando se canse el oficial",priority:"alta",canSplit:false,
-    specs:"Dime cuando me puedes reemplazar bro",
-    ,claimedBy:[]},
 ];
 
 const TABS = [
