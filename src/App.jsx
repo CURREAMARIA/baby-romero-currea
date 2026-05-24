@@ -99,6 +99,9 @@ const ITEMS_DEFAULT = [
     specs:"Plegable, fácil de limpiar. Con bolsillos si es posible. Para cambio fuera de casa.",
     refLink:"",claimedBy:[]},
   // LACTANCIA
+  { id:"l7",cat:"lactancia",icon:"🥛",name:"Extractor de leche",detail:"para mamá — ideal entre 2",priority:"Alta",canSplit:true,
+    specs:"Extractor de leche para mamá. Puede ser eléctrico o manual.\n\nEl enlace de referencia es el modelo sugerido.",
+    refLink:"https://a.co/d/01de44hF",claimedBy:[]},
   { id:"l1",cat:"lactancia",icon:"🧣",name:"Baberos muselina · Pack 1",detail:"×4 uds",priority:"Alta",canSplit:false,
     specs:"Baberos suaves de muselina. Lavables y absorbentes. Sin botones que puedan soltarse.",
     refLink:"https://a.co/d/0fhdUG8q",claimedBy:[]},
@@ -117,9 +120,6 @@ const ITEMS_DEFAULT = [
   { id:"l6",cat:"lactancia",icon:"🍽️",name:"Kit de comer (6 meses+)",detail:"plato, cucharas, vaso",priority:"Media",canSplit:false,
     specs:"Para la etapa de alimentación complementaria (6 meses en adelante). Incluir:\n✅ Plato silicona con ventosa\n✅ Cucharas suaves\n✅ Vaso entrenador\n✅ Babero para alimentación",
     refLink:"",claimedBy:[]},
-  { id:"l7",cat:"lactancia",icon:"🥛",name:"Extractor de leche",detail:"para mamá — ideal entre 2",priority:"Alta",canSplit:true,
-    specs:"Extractor de leche para mamá. Puede ser eléctrico o manual.\n\nEl enlace de referencia es el modelo sugerido.",
-    refLink:"https://a.co/d/01de44hF",claimedBy:[]},
   // SUEÑO
   { id:"s1",cat:"sueno",icon:"🛏️",name:"Cuna colecho",detail:"con mosquitero · ideal entre 2",priority:"Alta",canSplit:true,
     specs:"Cuna colecho para poner al lado de la cama. Con mosquitero y organizador incluido.\n⚠️ Verificar dimensiones antes de comprar para que sea compatible con la cama.",
