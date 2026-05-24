@@ -165,9 +165,6 @@ const ITEMS_DEFAULT = [
     specs:"Plegable, cómodo. Verificar que pueda ir en posición tumbada o semi-reclinada para los primeros meses.",
     refLink:"",claimedBy:[]},
   // FUTURO
-  { id:"f1",cat:"futuro",icon:"🎪",name:"Tapete de estimulación",detail:"tummy time y juego",priority:"Media",canSplit:false,
-    specs:"Acolchado, con colores llamativos y texturas variadas. Fácil de limpiar.",
-    refLink:"",claimedBy:[]},
   { id:"f2",cat:"futuro",icon:"🎡",name:"Gimnasio para bebé",detail:"con juguetes colgantes",priority:"Media",canSplit:false,
     specs:"Con arco y juguetes colgantes para estimulación visual, auditiva y motora. Puede incluir espejo, sonajeros y texturas.",
     refLink:"",claimedBy:[]},
