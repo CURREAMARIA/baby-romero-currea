@@ -120,7 +120,7 @@ const ITEMS_DEFAULT = [
   { id:"l7",cat:"lactancia",icon:"🍽️",name:"Kit de comer (6 meses+)",detail:"plato, cucharas, vaso",priority:"Media",canSplit:false,
     specs:"Para la etapa de alimentación complementaria (6 meses en adelante). Incluir:\n✅ Plato silicona con ventosa\n✅ Cucharas suaves\n✅ Vaso entrenador\n✅ Babero para alimentación",
     refLink:"",claimedBy:[]},
-  { id:"l7",cat:"lactancia",icon:"🍼",name:"Bolsas Almacenamiento Leche",detail:"Bolsas Almacenamiento Leche Materna",priority:"Media",canSplit:false,
+  { id:"l8",cat:"lactancia",icon:"🍼",name:"Bolsas Almacenamiento Leche",detail:"Bolsas Almacenamiento Leche Materna",priority:"Media",canSplit:false,
     specs:"Preferiblemente pack x120",
     refLink:"https://a.co/d/05ZCXPuJ",claimedBy:[]},
   // SUEÑO
