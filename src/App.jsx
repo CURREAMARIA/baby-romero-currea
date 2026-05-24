@@ -691,7 +691,7 @@ export default function App() {
         <div style={{display:"flex",gap:6,overflowX:"auto",paddingBottom:6,marginBottom:16,scrollbarWidth:"none"}}>
           {TABS.map(t => (
             <button key={t.id} className="tab" onClick={() => setActiveTab(t.id)}
-              style={{background:activeTab===t.id?"#ecfdf5":"#ffff99",color:activeTab===t.id?"white":"#065f46"}}>
+              style={{background:activeTab===t.id?"#059669":"#FFFBEB",color:activeTab===t.id?"white":"#065f46"}}>
               {t.icon} {t.label}
             </button>
           ))}
