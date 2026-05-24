@@ -165,6 +165,9 @@ const ITEMS_DEFAULT = [
   { id:"f5",cat:"futuro",icon:"🚶",name:"Andador",detail:"para empezar a caminar",priority:"Baja",canSplit:false,
     specs:"Andador para la etapa de aprendizaje de caminar.\n\nEl enlace de referencia es el modelo sugerido.",
     refLink:"https://a.co/d/0dtwIiN9",claimedBy:[]},
+  { id:"f6",cat:"futuro",icon:"🚶",name:"Papá de repuesto",detail:"para cuando esté cansado el oficial",priority:"Alta",canSplit:false,
+    specs:"Avisame cuando puedes bro",
+    refLink:"",claimedBy:[]},
 ];
 
 const TABS = [
@@ -682,7 +685,7 @@ export default function App() {
         <div style={{display:"flex",gap:6,overflowX:"auto",paddingBottom:6,marginBottom:16,scrollbarWidth:"none"}}>
           {TABS.map(t => (
             <button key={t.id} className="tab" onClick={() => setActiveTab(t.id)}
-              style={{background:activeTab===t.id?"#059669":"#d1fae5",color:activeTab===t.id?"white":"#065f46"}}>
+              style={{background:activeTab===t.id?"#f0fdf4":"#d1fae5",color:activeTab===t.id?"white":"#065f46"}}>
               {t.icon} {t.label}
             </button>
           ))}
