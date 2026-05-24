@@ -120,6 +120,9 @@ const ITEMS_DEFAULT = [
   { id:"l6",cat:"lactancia",icon:"🍽️",name:"Kit de comer (6 meses+)",detail:"plato, cucharas, vaso",priority:"Media",canSplit:false,
     specs:"Para la etapa de alimentación complementaria (6 meses en adelante). Incluir:\n✅ Plato silicona con ventosa\n✅ Cucharas suaves\n✅ Vaso entrenador\n✅ Babero para alimentación",
     refLink:"",claimedBy:[]},
+  { id:"l7",cat:"lactancia",icon:"🍼",name:"Bolsas Almacenamiento Leche",detail:"Bolsas Almacenamiento Leche Materna",priority:"Media",canSplit:false,
+    specs:"Preferiblemente pack x120",
+    refLink:"https://a.co/d/05ZCXPuJ",claimedBy:[]},
   // SUEÑO
   { id:"s1",cat:"sueno",icon:"🛏️",name:"Cuna colecho",detail:"con mosquitero · ideal entre 2",priority:"Alta",canSplit:true,
     specs:"Cuna colecho para poner al lado de la cama. Con mosquitero y organizador incluido.\n⚠️ Verificar dimensiones antes de comprar para que sea compatible con la cama.",
@@ -152,6 +155,9 @@ const ITEMS_DEFAULT = [
   { id:"t3",cat:"paseo",icon:"🚼",name:"Coche/cochecito",detail:"seguro para RN · ideal entre 2",priority:"Alta",canSplit:true,
     specs:"Plegable, cómodo. Verificar que pueda ir en posición tumbada o semi-reclinada para los primeros meses.",
     refLink:"",claimedBy:[]},
+  { id:"t4",cat:"paseo",icon:"🎒",name:"Porta Bebé Ergonómico",detail:"Ideal para paseos cómodos",priority:"Media",canSplit:false,
+    specs:"",
+    refLink:"https://a.co/d/0fXtdflX",claimedBy:[]},
   // FUTURO
   { id:"f2",cat:"futuro",icon:"🎡",name:"Gimnasio para bebé",detail:"con juguetes colgantes",priority:"Media",canSplit:false,
     specs:"Con arco y juguetes colgantes para estimulación visual, auditiva y motora. Puede incluir espejo, sonajeros y texturas.",
@@ -685,7 +691,7 @@ export default function App() {
         <div style={{display:"flex",gap:6,overflowX:"auto",paddingBottom:6,marginBottom:16,scrollbarWidth:"none"}}>
           {TABS.map(t => (
             <button key={t.id} className="tab" onClick={() => setActiveTab(t.id)}
-              style={{background:activeTab===t.id?"#f0fdf4":"#d1fae5",color:activeTab===t.id?"white":"#065f46"}}>
+              style={{background:activeTab===t.id?"#ecfdf5":"#ffff99",color:activeTab===t.id?"white":"#065f46"}}>
               {t.icon} {t.label}
             </button>
           ))}
