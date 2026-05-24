@@ -617,7 +617,7 @@ export default function App() {
             Lista de Deseos
           </h1>
           <div style={{fontFamily:"'Fredoka One',sans-serif",fontSize:20,color:"#a7f3d0",letterSpacing:.5,marginBottom:6,lineHeight:1.2}}>
-            Baby Romero Currea 💚
+            Jeronimo Romero Currea 💚
           </div>
           <div style={{color:"#6ee7b7",fontWeight:800,fontSize:13}}>Baby Shower · Temática Dinosaurios 🌿</div>
         </div>
