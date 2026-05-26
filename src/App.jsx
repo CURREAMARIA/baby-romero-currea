@@ -83,7 +83,7 @@ const ITEMS_DEFAULT = [
     refLink:"https://a.co/d/0epnb7rM",claimedBy:[]},
   { id:"b3",cat:"bano",icon:"🧴",name:"Kit de aseo completo",priority:"Alta",canSplit:true,
     specs:"El kit debe incluir:\n✅ Cortaúñas o tijerita de punta redonda\n✅ Lima de uñas para bebé\n✅ Cepillo y peine suave\n✅ Termómetro digital\n✅ Aspirador nasal o perita\n✅ Jabón líquido suave\n✅ Shampoo sin lágrimas\n✅ Crema antipañalitis\n✅ Crema humectante\n\nPuede venir en caja lista o por separado.",
-    refLink:"https://a.co/d/0epnb7rM",claimedBy:[]},
+    refLink:"https://a.co/d/05yCAwq1",claimedBy:[]},
   { id:"b4",cat:"bano",icon:"💧",name:"Combo cuidado: pañitos + cremas + loción",detail:"varios productos juntos",priority:"Alta",canSplit:true,
     specs:"Combo de productos esenciales para el cuidado diario del bebé:\n\n✅ Pañitos húmedos sin alcohol ni perfume (entre más cantidad, mejor — varios paquetes grandes)\n✅ Crema antipañalitis MARCA 4 (varias unidades)\n✅ Crema de cuerpo para bebé\n✅ Shampoo o jabón dove\n✅ Loción Arrurrú\n\nTodos sin perfume fuerte. ⚠️ Para la crema antipañalitis preferimos específicamente la Marca 4.",
     refLink:"",claimedBy:[]},
@@ -98,7 +98,7 @@ const ITEMS_DEFAULT = [
   { id:"l1",cat:"lactancia",icon:"🥛",name:"Extractor de leche",detail:"para mamá — ideal entre 2",priority:"Alta",canSplit:true,
     specs:"Extractor de leche para mamá. Preferiblemente electrico \n\nEl enlace de referencia es el modelo y marca sugeridos.",
     refLink:"https://a.co/d/01de44hF",claimedBy:[]},
-  { id:"l2",cat:"lactancia",icon:"🧣",name:"Baberos muselina y Trapitos sacar gases",detail:"×10 uds",priority:"Alta",canSplit:false,
+  { id:"l2",cat:"lactancia",icon:"🧣",name:"Baberos muselina y Trapitos para sacar gases",detail:"×10 uds",priority:"Alta",canSplit:false,
     specs:"Baberos suaves de muselina o algodón y trapitos para sacar gases. Lavables y absorbentes",
     refLink:"https://a.co/d/0atSmYR2",claimedBy:[]},
   { id:"l5",cat:"lactancia",icon:"🍼",name:"Biberones Pigeon ×3",detail:"⚠️ marca específica",priority:"Alta",canSplit:false,
@@ -118,7 +118,7 @@ const ITEMS_DEFAULT = [
     specs:"Cuna colecho para poner al lado de la cama. Con mosquitero y organizador incluido.\n⚠️ Verificar dimensiones antes de comprar para que sea compatible con la cama.",
     refLink:"https://www.falabella.com.co/falabella-co/product/120249206/Cuna-Colecho-para-Bebe-con-Mosquitero-y-Organizador-/120249207",claimedBy:[]},
   { id:"s2",cat:"sueno",icon:"🧸",name:"Sábanas ajustables y Mantas de algodón o bambú ×4",detail:"para cuna colecho",priority:"Alta",canSplit:false,
-    specs:"⚠️ Verificar la medida exacta del colecho antes de comprar para que ajusten bien",
+    specs:"⚠️ Verificar la medida exacta del colecho antes de comprar para que ajusten bien. Procura que  las mantas sean suaves⚠️ ",
     refLink:"",claimedBy:[]},
   { id:"s4",cat:"sueno",icon:"💤",name:"Saco de dormir bebé x3",detail:"más seguro que cobijas",priority:"Media",canSplit:false,
     specs:"Más seguro que cobijas sueltas. Liviano, de talla 0-3 y 3-6 preferiblemente.",
@@ -678,7 +678,7 @@ export default function App() {
         <div style={{display:"flex",gap:6,overflowX:"auto",paddingBottom:6,marginBottom:16,scrollbarWidth:"none"}}>
           {TABS.map(t => (
             <button key={t.id} className="tab" onClick={() => setActiveTab(t.id)}
-              style={{background:activeTab===t.id?"#059669":"#FFFBEB",color:activeTab===t.id?"white":"#065f46"}}>
+              style={{background:activeTab===t.id?"#059669":"#FED7AA",color:activeTab===t.id?"white":"#9a3412"}}>
               {t.icon} {t.label}
             </button>
           ))}
@@ -740,11 +740,13 @@ export default function App() {
                           {cl ? (
                             <>
                               <div style={{fontSize:12,color:"#059669",fontWeight:800,marginBottom:6}}>✅ {pkg.claimedBy}</div>
-                              <button onClick={() => unclaim("clothing", sk, pkg.id, 0)} style={{
-                                width:"100%",background:"none",border:"1.5px solid #e2e8f0",borderRadius:8,
-                                padding:"5px",cursor:"pointer",fontSize:11,color:"#94a3b8",
-                                fontFamily:"'Nunito',sans-serif",fontWeight:700,
-                              }}>Liberar</button>
+                              {adminMode && (
+                                <button onClick={() => unclaim("clothing", sk, pkg.id, 0)} style={{
+                                  width:"100%",background:"none",border:"1.5px solid #e2e8f0",borderRadius:8,
+                                  padding:"5px",cursor:"pointer",fontSize:11,color:"#94a3b8",
+                                  fontFamily:"'Nunito',sans-serif",fontWeight:700,
+                                }}>Liberar</button>
+                              )}
                             </>
                           ) : (
                             <button onClick={() => openModal({
@@ -805,11 +807,15 @@ export default function App() {
                       </div>
                       <div style={{fontSize:12,color:"#94a3b8",marginBottom:6}}>{item.detail}</div>
                       {item.claimedBy.map((name, idx) => (
-                        <div key={idx} style={{fontSize:12,color:"#059669",fontWeight:700,marginBottom:3,display:"flex",alignItems:"center",gap:6}}>
+                        <div key={idx} style={{fontSize:12,color:"#059669",fontWeight:700,marginBottom:3,display:"flex",alignItems:"center",gap:6,flexWrap:"wrap"}}>
                           ✅ {item.canSplit ? `Persona ${idx+1}: ` : ""}{name}
-                          <button onClick={() => unclaim("item", null, item.id, idx)} style={{
-                            background:"none",border:"none",cursor:"pointer",fontSize:10,color:"#cbd5e1",padding:0,lineHeight:1
-                          }}>✕</button>
+                          {adminMode && (
+                            <button onClick={() => unclaim("item", null, item.id, idx)} style={{
+                              background:"none",border:"1.5px solid #e2e8f0",borderRadius:8,
+                              padding:"3px 10px",cursor:"pointer",fontSize:11,color:"#94a3b8",
+                              fontFamily:"'Nunito',sans-serif",fontWeight:700,
+                            }}>Liberar</button>
+                          )}
                         </div>
                       ))}
                       {partial && <div style={{fontSize:11,color:"#d97706",fontWeight:800,marginTop:2}}>⚡ Buscan 2ª persona para compartir</div>}
