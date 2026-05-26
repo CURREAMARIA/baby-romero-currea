@@ -6,11 +6,9 @@ const CLOTHING_DEFAULT = {
   "0-3m": {
     label: "Talla 0–3 meses", emoji: "🥚", color: "#10b981",
     packages: [
-      { id:"rA01", type:"Bodies manga larga", n:1, qty:"×3 uds",
+      { id:"rA01", type:"Bodies manga larga", n:1, qty:"×6 uds",
         specs:"Algodón 100% suave. Colores neutros o suaves (blanco, gris, verde menta, azul claro). Cierre a presión en la entrepierna. Sin adornos que puedan molestar.", refLink:"", claimedBy:"" },
-      { id:"rA02", type:"Bodies manga larga", n:2, qty:"×3 uds",
-        specs:"Igual que Paquete 1. Algodón suave, colores neutros, cierre a presión.", refLink:"", claimedBy:"" },
-      { id:"rA03", type:"Bodies manga corta", n:1, qty:"×3 uds",
+           { id:"rA03", type:"Bodies manga corta", n:1, qty:"×6 uds",
         specs:"Algodón suave. Ideales para uso diario. Colores neutros o estampados simples.", refLink:"", claimedBy:"" },
       { id:"rA04", type:"Pijamas algodón", n:1, qty:"×3 uds",
         specs:"Preferiblemente con broches a presión en la entrepierna. Sin cordones ni cremalleras. Talla 0-3 meses.", refLink:"", claimedBy:"" },
@@ -21,11 +19,9 @@ const CLOTHING_DEFAULT = {
   "3-6m": {
     label: "Talla 3–6 meses", emoji: "🦕", color: "#059669",
     packages: [
-      { id:"rB01", type:"Bodies manga larga", n:1, qty:"×3 uds",
+      { id:"rB01", type:"Bodies manga larga", n:1, qty:"×6 uds",
         specs:"Algodón 100%. Colores neutros o suaves. Cierre a presión. Talla 3-6 meses.", refLink:"", claimedBy:"" },
-      { id:"rB02", type:"Bodies manga larga", n:2, qty:"×3 uds",
-        specs:"Igual que Paquete 1. Talla 3-6 meses.", refLink:"", claimedBy:"" },
-      { id:"rB03", type:"Bodies manga corta", n:1, qty:"×3 uds",
+      { id:"rB03", type:"Bodies manga corta", n:1, qty:"×6 uds",
         specs:"Algodón suave, uso diario. Talla 3-6 meses.", refLink:"", claimedBy:"" },
       { id:"rB04", type:"Pijamas algodón", n:1, qty:"×3 uds",
         specs:"Con broches a presión, sin cordones. Talla 3-6 meses.", refLink:"", claimedBy:"" },
@@ -40,11 +36,9 @@ const CLOTHING_DEFAULT = {
   "6-9m": {
     label: "Talla 6–9 meses", emoji: "🦖", color: "#047857",
     packages: [
-      { id:"rC01", type:"Bodies manga larga", n:1, qty:"×3 uds",
+      { id:"rC01", type:"Bodies manga larga", n:1, qty:"×6 uds",
         specs:"Algodón preferiblemente. Colores neutros. Talla 6-9 meses.", refLink:"", claimedBy:"" },
-      { id:"rC02", type:"Bodies manga larga", n:2, qty:"×3 uds",
-        specs:"Igual que Paquete 1. Talla 6-9 meses.", refLink:"", claimedBy:"" },
-      { id:"rC03", type:"Bodies manga corta", n:1, qty:"×3 uds",
+      { id:"rC03", type:"Bodies manga corta", n:1, qty:"×6 uds",
         specs:"Algodón suave, uso diario. Talla 6-9 meses.", refLink:"", claimedBy:"" },
       { id:"rC04", type:"Pijamas", n:1, qty:"×3 uds",
         specs:"Tela fresca y cómoda. Con cierre fácil. Talla 6-9 meses.", refLink:"", claimedBy:"" },
