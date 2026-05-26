@@ -89,7 +89,7 @@ const ITEMS_DEFAULT = [
   { id:"p1",cat:"panales",icon:"♻️",name:"Pañales ecológicos reutilizables",detail:"combo completo — ideal entre 2",priority:"Alta",canSplit:true,
     specs:"Combo que incluye: pañales ecológicos reutilizables, absorbentes, filtros y detergente especial.\n\nEs el regalo más completo de pañales y puede compartirse entre 2 personas.",
     refLink:"https://okolo.com.co/collections/combos-panales-ecologicos-reutilizables-bebes/products/combo-familia-x6-panales-ecologicos-6-absorbentes-1-filtros-x100-gratis-1-detergente-2l-okolo",claimedBy:[]},
-  { id:"p6",cat:"panales",icon:"🧳",name:"Cambiador portátil",detail:"para salidas",priority:"Alta",canSplit:false,
+  { id:"p2",cat:"panales",icon:"🧳",name:"Cambiador portátil",detail:"para salidas",priority:"Alta",canSplit:false,
     specs:"Plegable, fácil de limpiar. Con bolsillos si es posible. Para cambio fuera de casa.",
     refLink:"",claimedBy:[]},
   // LACTANCIA
