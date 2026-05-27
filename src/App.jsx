@@ -88,7 +88,7 @@ const ITEMS_DEFAULT = [
     specs:"Combo de productos esenciales para el cuidado diario del bebé:\n\n✅ Pañitos húmedos sin alcohol ni perfume (entre más cantidad, mejor — varios paquetes grandes)\n✅ Crema antipañalitis MARCA 4 (varias unidades)\n✅ Crema de cuerpo para bebé\n✅ Shampoo o jabón dove\n✅ Loción Arrurrú\n\nTodos sin perfume fuerte. ⚠️ Para la crema antipañalitis preferimos específicamente la Marca 4.",
     refLink:"",claimedBy:[]},
   // PAÑALES
-  { id:"p1",cat:"panales",icon:"♻️",name:"Pañales ecológicos reutilizables",detail:"combo completo — ideal entre 2",priority:"Alta",canSplit:true,
+  { id:"p1",cat:"panales",icon:"♻️",name:"Pañales ecológicos reutilizables",detail:"combo completo",priority:"Alta",canSplit:true,
     specs:"Combo que incluye: pañales ecológicos reutilizables, absorbentes, filtros y detergente especial.\n\nEs el regalo más completo de pañales y puede compartirse entre 2 personas. Agradeceriamos que los pañales vengan con filtros y absorbentes",
     refLink:"https://okolo.com.co/collections/combos-panales-ecologicos-reutilizables-bebes/products/combo-familia-x6-panales-ecologicos-6-absorbentes-1-filtros-x100-gratis-1-detergente-2l-okolo",claimedBy:[]},
   { id:"p6",cat:"panales",icon:"🧳",name:"Cambiador portátil y pañitos humedos",detail:"para salidas",priority:"Alta",canSplit:false,
