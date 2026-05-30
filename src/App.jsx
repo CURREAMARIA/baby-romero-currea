@@ -120,7 +120,7 @@ const ITEMS_DEFAULT = [
   { id:"s2",cat:"sueno",icon:"🧸",name:"Sábanas ajustables y Mantas de algodón o bambú ×4",detail:"para cuna colecho",priority:"Alta",canSplit:false,
     specs:"⚠️ Verificar la medida exacta del colecho antes de comprar para que ajusten bien. Procura que  las mantas sean suaves⚠️ ",
     refLink:"",claimedBy:[]},
-  { id:"s4",cat:"sueno",icon:"💤",name:"Saco de dormir bebé x3",detail:"más seguro que cobijas",priority:"Media",canSplit:false,
+  { id:"s4",cat:"sueno",icon:"💤",name:"Saco de dormir bebé x6",detail:"más seguro que cobijas",priority:"Media",canSplit:false,
     specs:"Más seguro que cobijas sueltas. Liviano, de talla 0-3 y 3-6 preferiblemente.",
     refLink:"https://a.co/d/0aJiCk74",claimedBy:[]},
   { id:"s5",cat:"sueno",icon:"🌙",name:"Cobijita liviana ×2",detail:"suave y transpirable",priority:"Media",canSplit:false,
